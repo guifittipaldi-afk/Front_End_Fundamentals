@@ -1,0 +1,69 @@
+/*Centralize uma <div> horizontalmente usando o método margin: 0 auto;.*/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Centralizar Div Horizontalmente</title>
+  <style>
+    .container {
+      width: 200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    Conteúdo da Div
+  </div>
+</body>
+</html>
+
+
+/*Centralize uma <div> vertical e horizontalmente usando display: flex e justify-content: center e align-items: center.*/
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Centralizar Div Vertical e Horizontalmente</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    Conteúdo da Div
+  </div>
+</body>
+</html>
+
+/* Centralize uma <div> horizontalmente usando position: absolute e left: 50% em conjunto com transform: translateX(-50%).*/
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Centralizar Div Horizontalmente</title>
+  <style>
+    .container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    Conteúdo da Div
+  </div>
+</body>
+</html>

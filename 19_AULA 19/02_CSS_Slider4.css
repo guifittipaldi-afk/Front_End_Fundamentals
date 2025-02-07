@@ -1,0 +1,27 @@
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/* Linhas 01 a 08: Definição da classe slider, a classe base para o estilo do elemento que estamos criando. Aqui, especificamos os principais parâmetros que serão necessários para o visual do elemento. A altura (height) e a largura (width) estão setadas com esses valores (293 e 600px, respectivamente) devido ao tamanho das imagens, mas poderiam ser outros valores. Note, ainda, que temos uma margem em relação ao topo (margin-top), para garantir um melhor visual do slider com relação à página;
+
+Linhas 10 a 13: Definição do elemento li filho da classe slider. Essa técnica de CSS indica que todo elemento li que está presente dentro de outro elemento com a classe slider receberá esse estilo. Como podemos notar pela Listagem 1, esse é nosso caso. Assim, o estilo será aplicado a todos os itens da lista. O estilo em si é muito simples: evita-se o estilo padrão (list-style: none;) e garante-se um posicionamento absoluto, ou seja, com relação à página;
+
+Linhas 15 a 20: Definição do elemento img filho da classe slider. A técnica é equivalente ao que vimos na linha 10. Nesse caso, definimos o estilo para as imagens. A propriedade “margin: auto;” serve para centralizar o elemento. A largura e a altura em 100% sinalizam para a imagem tomar toda a largura do container: no caso, 600 e 293px, respectivamente (valores da classe slider). Por fim, “vertical-align: top;” indica que a imagem ficará alinhada verticalmente com relação ao seu topo.*/

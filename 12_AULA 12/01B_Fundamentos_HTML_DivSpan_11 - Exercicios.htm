@@ -1,0 +1,98 @@
+/*Crie um layout básico de uma página HTML com um cabeçalho contendo o título "Minha Página" e um conteúdo principal com duas seções: "Sobre" e "Contato". Utilize a tag <div> para agrupar o conteúdo de cada seção.*/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+</head>
+<body>
+  <header>
+    <h1>Minha Página</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre</h2>
+      <div>
+        <p>Conteúdo da seção Sobre...</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <div>
+        <p>Conteúdo da seção Contato...</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+/*Crie uma lista de itens numerados utilizando a tag <span> para destacar os números. Cada item da lista deve ser envolvido em uma tag <div>.*/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lista Numerada</title>
+</head>
+<body>
+  <div>
+    <h2>Lista Numerada</h2>
+    <div>
+      <ol>
+        <li><span>1.</span> Item 1</li>
+        <li><span>2.</span> Item 2</li>
+        <li><span>3.</span> Item 3</li>
+        <li><span>4.</span> Item 4</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
+
+/* Crie uma tabela simples utilizando as tags <div> e <span> para representar as células e os cabeçalhos da tabela.*/
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela Simples</title>
+  <style>
+    .table {
+      display: table;
+    }
+    .table-row {
+      display: table-row;
+    }
+    .table-cell {
+      display: table-cell;
+      padding: 5px;
+      border: 1px solid black;
+    }
+    .header {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="table">
+    <div class="table-row header">
+      <div class="table-cell"><span>Nome</span></div>
+      <div class="table-cell"><span>Idade</span></div>
+      <div class="table-cell"><span>Profissão</span></div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell"><span>João</span></div>
+      <div class="table-cell"><span>30</span></div>
+      <div class="table-cell"><span>Engenheiro</span></div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell"><span>Maria</span></div>
+      <div class="table-cell"><span>25</span></div>
+      <div class="table-cell"><span>Advogada</span></div>
+    </div>
+  </div>
+</body>
+</html>
+
