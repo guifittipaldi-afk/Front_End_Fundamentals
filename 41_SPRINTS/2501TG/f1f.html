@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="stylesheet" href="f1f.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Preço Uber</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Uber Preço</h1>
+    
+    <label for="distancia">Distância em km:</label>
+    <input type="text" id="distancia" placeholder="Ex: 10">
+    
+    <label for="tipo">Tipo de Serviço:</label>
+    <select id="tipo">
+      <option value="X">UberX</option>
+      <option value="Comfort">Uber Comfort</option>
+      <option value="Black">Uber Black</option>
+    </select>
+
+    <button id="calcular">Calcular Preço</button>
+    
+    <h2>Preço Estimado:</h2>
+    <p id="resultado"></p>
+  </div>
+  <script src="f1f.js"></script>
+</body>
+</html>
