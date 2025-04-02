@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(9, 55px);
+	grid-template-rows: repeat(9, 55px);
+	gap: 10px;
+}
+
+.shape {
+	text-align: center;
+	font-family:Verdana, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Tahoma, sans-serif;
+	color: black;
+	font-size: 40px;
+	width: 50px;
+	height: 50px;
+	background-color: #eee;
+	border-radius: 50%;
+	animation: pulse 4s infinite alternate, color-change 4s infinite alternate;
+	animation-delay: calc(var(--index) * 0.1s);
+	transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.shape:hover {
+	opacity: 0.2;
+	transform: scale(2);
+	animation-play-state: paused;
+	animation: shake 0.3s ease-in-out infinite;
+	
+}
+
+.container :nth-child(4n) {
+	border-radius: 0;
+	transform: rotate(75deg);
+}
+
+.container :nth-child(4n + 1) {
+	border-radius: 0;
+	transform: rotate(60deg);
+}
+
+.container :nth-child(4n + 2) {
+	border-radius: 0;
+	transform: rotate(45deg);
+}
+
+.container :nth-child(4n + 3) {
+	border-radius: 0;
+	transform: rotate(30deg);
+}
+
+/* Rainbow Colors */
+@keyframes color-change {
+	0% {
+		color:#e74c3c ;
+		background-color: #e74c3c;
+		border-radius: 50%;
+	}
+	25% {
+		color:#3498db ;
+		background-color: #3498db;
+		border-radius: 0;
+	}
+	50% {
+		color:#f39c12 ;
+		background-color: #f39c12;
+		border-radius: 50%;
+	}
+	75% {
+		color:#9b59b6 ;
+		background-color: #9b59b6;
+		border-radius: 0;
+	}
+	100% {
+		color:#2ecc71 ;
+		background-color: #2ecc71;
+		border-radius: 50%;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(0.8) rotate(45deg);
+	}
+}
+
+/* Shake animation */
+@keyframes shake {
+	0% {
+		transform: translateX(0) rotate(0deg);
+	}
+	25% {
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	50% {
+		transform: translateX(3px) rotate(2deg);
+	}
+	75% {
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	100% {
+		transform: translateX(0) rotate(0deg);
+	}
+}
